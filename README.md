@@ -84,6 +84,8 @@ nvim ~/.local/share/nvim/plugged/nvim-lspconfig/lua/lspconfig/server_configurati
 **Add following lines before '-jar' in cmd**
 ```
 '-javaagent:/home/path/.local/share/nvim/lsp_servers/jdtls/lombok.jar',
+
+//In older jdks version add
 '-Xbootclasspath/a:/home/path/.local/share/nvim/lsp_servers/jdtls/lombok.jar',
 ```
 **Should look like this afterwards**
