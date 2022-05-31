@@ -86,5 +86,5 @@ nvim ~/.local/share/nvim/plugged/nvim-lspconfig/lua/lspconfig/server_configurati
 '-javaagent:/home/path/.local/share/nvim/lsp_servers/jdtls/lombok.jar',
 '-Xbootclasspath/a:/home/path/.local/share/nvim/lsp_servers/jdtls/lombok.jar',
 ```
-**Should look like this afterwards **
+**Should look like this afterwards**
 ![image](https://user-images.githubusercontent.com/103575653/171080753-b22e9ce0-3a73-4e2f-9aa9-9c3d54030db4.png)
