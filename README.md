@@ -73,3 +73,18 @@ Watch my video tutorials:
 - [Twitter @inkdrop_app](https://twitter.com/inkdrop_app)
 - [Blog](https://blog.inkdrop.app/)
 - [My product: Inkdrop - Markdown note-taking app](https://www.inkdrop.app/)
+
+
+## Lombok(Optional)
+```
+cd ~/.local/share/nvim/lsp_servers/jdtls
+wget https://projectlombok.org/downloads/lombok.jar
+nvim ~/.local/share/nvim/plugged/nvim-lspconfig/lua/lspconfig/server_configurations/jdtls.lua
+```
+**Add following lines before '-jar' in cmd**
+```
+'-javaagent:/home/path/.local/share/nvim/lsp_servers/jdtls/lombok.jar',
+'-Xbootclasspath/a:/home/path/.local/share/nvim/lsp_servers/jdtls/lombok.jar',
+```
+**Should look like this afterwards **
+![image](https://user-images.githubusercontent.com/103575653/171080753-b22e9ce0-3a73-4e2f-9aa9-9c3d54030db4.png)
