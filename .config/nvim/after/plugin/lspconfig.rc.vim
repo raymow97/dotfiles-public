@@ -83,6 +83,15 @@ nvim_lsp.tsserver.setup {
   capabilities = capabilities
 }
 
+nvim_lsp.jdtls.setup {
+  on_attach = on_attach,
+  filetypes = { "java" },
+        root_dir = function(fname)
+                return vim.fn.getcwd()
+        end,
+  capabilities = capabilities
+}
+
 nvim_lsp.diagnosticls.setup {
   on_attach = on_attach,
   filetypes = { 'javascript', 'javascriptreact', 'json', 'typescript', 'typescriptreact', 'css', 'less', 'scss', 'pandoc' },
